@@ -620,6 +620,9 @@ type TreeData struct {
 	// Value of the data item.
 	Value int `json:"value,omitempty"`
 
+	// Metadata can contain additional information about the data item.
+	Metadata interface{} `json:"metadata,omitempty"`
+
 	Children []*TreeData `json:"children,omitempty"`
 
 	// Symbol of node of this category.
